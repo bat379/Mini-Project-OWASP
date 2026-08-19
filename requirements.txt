@@ -1,0 +1,10 @@
+# OWASP Top 10 Security Assessment Lab - Dependencies
+# Install with: pip install -r requirements.txt
+
+customtkinter==5.2.2      # Modern desktop GUI framework
+requests==2.32.3          # HTTP client for safe, read-only header/cookie checks
+beautifulsoup4==4.12.3    # HTML parsing for form review checks
+reportlab==4.2.5          # PDF report generation
+pandas==2.2.3             # Findings data handling / export (CSV, filtering)
+jinja2==3.1.4             # Templating (used for report/text generation helpers)
+pillow==10.4.0             # Image handling for CustomTkinter assets/icons
