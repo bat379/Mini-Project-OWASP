@@ -145,4 +145,29 @@ OWASP Security Lab is intended **solely for educational and defensive cybersecur
 ## 📌 GitHub Description
 
 **A Python-based web security assessment tool that scans applications for OWASP Top 10 security issues, analyzes common misconfigurations, and generates detailed security reports for educational purposes.**
-```
+Troubleshooting: PIP Installation Error
+
+If pip install -r requirements.txt fails with an externally-managed-environment or PEP 668 error, use a Python virtual environment instead of installing packages system-wide.
+
+The installation workflow includes:
+
+Navigate to the OWASP Security Lab directory.
+Install Python virtual-environment and Tkinter support.
+Create a .venv virtual environment.
+Activate the virtual environment.
+Upgrade pip inside the virtual environment.
+Install the project dependencies from requirements.txt.
+Start the application.
+
+cd ~/Mini-Project-OWASP/OWASP-Security-Lab
+
+sudo apt update
+sudo apt install -y python3-venv python3-full python3-tk
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+python main.py
